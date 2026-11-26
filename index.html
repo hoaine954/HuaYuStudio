@@ -679,6 +679,108 @@
     'Đề thi thật HSK/HSKK'
   ];
 
+  // Curated Chinese Motivational Quotes, Proverbs, Idioms & Classical Verses
+  const MOTIVATIONAL_QUOTES = [
+    {
+      category: 'Danh ngôn Đạo Đức Kinh',
+      zh: '千里之行，始于足下。',
+      py: 'Qiānlǐ zhī xíng, shǐ yú zú xià.',
+      vi: 'Hành trình vạn dặm bắt đầu từ một bước chân.',
+      note: 'Mỗi bài nghe, mỗi từ vựng hôm nay chính là bước khởi đầu vững chắc cho mục tiêu HSK.'
+    },
+    {
+      category: 'Thành ngữ cổ • 成语',
+      zh: '水滴石穿，绳锯木断。',
+      py: 'Shuǐ dī shí chuān, shéng jù mù duàn.',
+      vi: 'Nước chảy đá mòn, dây cưa gỗ đứt.',
+      note: 'Sự kiên trì tích lũy từng chút mỗi ngày sẽ tạo nên bứt phá đáng kinh ngạc.'
+    },
+    {
+      category: 'Tục ngữ học tập • 谚语',
+      zh: '学如逆水行舟，不进则退。',
+      py: 'Xué rú nìshuǐ xíngzhōu, bú jìn zé tuì.',
+      vi: 'Học như chèo thuyền ngược nước, không tiến ắt sẽ lùi.',
+      note: 'Duy trì nhịp độ luyện tập đều đặn giúp phản xạ ngôn ngữ luôn sắc bén.'
+    },
+    {
+      category: 'Cổ thi • 古诗文',
+      zh: '宝剑锋从磨砺出，梅花香自苦寒来。',
+      py: 'Bǎojiàn fēng cóng mólì chū, méihuā xiāng zì kǔhán lái.',
+      vi: 'Gươm báu sắc bén nhờ mài giũa, hoa mai thơm ngát từ giá lạnh.',
+      note: 'Thành quả ngọt ngào luôn dành cho những người bền bỉ vượt qua thử thách.'
+    },
+    {
+      category: 'Tuân Tử • Khuyến Học',
+      zh: '不积跬步，无以至千里。',
+      py: 'Bù jī kuǐbù, wú yǐ zhì qiānlǐ.',
+      vi: 'Không tích từng nửa bước chân thì chẳng thể đi tới ngàn dặm.',
+      note: 'Đừng vội vàng — từng cấu trúc ngữ pháp nhỏ sẽ ghép nên sự lưu loát.'
+    },
+    {
+      category: 'Hậu Hán Thư • 名言',
+      zh: '有志者，事竟成。',
+      py: 'Yǒuzhìzhě, shì jìng chéng.',
+      vi: 'Người có chí ắt làm nên việc.',
+      note: 'Khi mục tiêu đủ rõ ràng, mọi nỗ lực của bạn đều sẽ đơm hoa kết trái.'
+    },
+    {
+      category: 'Hàn Dũ • Danh ngôn',
+      zh: '书山有路勤为径，学海无涯苦作舟。',
+      py: 'Shūshān yǒu lù qín wéi jìng, xuéhǎi wú yá kǔ zuò zhōu.',
+      vi: 'Núi sách có đường lấy cần cù làm lối, biển học vô bờ lấy chịu khó làm thuyền.',
+      note: 'Sự chăm chỉ mỗi ngày chính là chiếc thuyền đưa bạn vượt qua biển lớn Hán ngữ.'
+    },
+    {
+      category: 'Luận Ngữ • 论语',
+      zh: '温故而知新，可以为师矣。',
+      py: 'Wēn gù ér zhī xīn, kěyǐ wéi shī yǐ.',
+      vi: 'Ôn lại điều cũ để hiểu thêm điều mới, có thể làm thầy vậy.',
+      note: 'Thường xuyên ôn lại sổ từ vựng và lỗi sai ngữ pháp giúp kiến thức khắc sâu.'
+    },
+    {
+      category: 'Tục ngữ dân gian • 谚语',
+      zh: '世上无难事，只怕有心人。',
+      py: 'Shìshàng wú nánshì, zhǐ pà yǒuxīnrén.',
+      vi: 'Trên đời không có việc gì khó, chỉ sợ lòng người không bền.',
+      note: 'Tiếng Trung không hề khó khi bạn dành trọn tâm huyết luyện tập mỗi ngày.'
+    },
+    {
+      category: 'Tô Thức • Danh ngôn',
+      zh: '厚积而薄发。',
+      py: 'Hòu jī ér bó fā.',
+      vi: 'Tích lũy sâu dày rồi mới tỏa sáng rực rỡ.',
+      note: 'Nạp đủ đầu vào Nghe – Đọc mỗi ngày để tự tin bứt phá trong phòng thi thật.'
+    },
+    {
+      category: 'Vương Chi Hoán • 古诗',
+      zh: '欲穷千里目，更上一层楼。',
+      py: 'Yù qióng qiānlǐ mù, gèng shàng yì céng lóu.',
+      vi: 'Muốn nhìn xa ngàn dặm, hãy bước lên thêm một tầng lầu.',
+      note: 'Chinh phục xong cấp độ hiện tại, hãy tự tin vươn tới nấc thang HSK cao hơn.'
+    },
+    {
+      category: 'Tục ngữ Trung Hoa • 谚语',
+      zh: '只要功夫深，铁杵磨成针。',
+      py: 'Zhǐyào gōngfu shēn, tiěchǔ mó chéng zhēn.',
+      vi: 'Chỉ cần công phu sâu dày, chày sắt cũng mài thành kim.',
+      note: 'Kiên nhẫn chép chính tả từng câu sẽ giúp đôi tai bạn nghe hiểu tự nhiên.'
+    },
+    {
+      category: 'Luận Ngữ • 论语',
+      zh: '知之者不如好之者，好之者不如乐之者。',
+      py: 'Zhī zhī zhě bùrú hào zhī zhě, hào zhī zhě bùrú lè zhī zhě.',
+      vi: 'Người biết học không bằng người thích học, người thích học không bằng người vui với việc học.',
+      note: 'Hãy biến việc học tiếng Trung thành niềm vui khám phá văn hóa mỗi ngày.'
+    },
+    {
+      category: 'Khuất Nguyên • Ly Tao',
+      zh: '路漫漫其修远兮，吾将上下而求索。',
+      py: 'Lù mànmàn qí xiūyuǎn xī, wú jiāng shàngxià ér qiúsuǒ.',
+      vi: 'Đường phía trước còn dài và xa xôi, ta sẽ không ngừng tìm tòi khám phá.',
+      note: 'Hành trình chinh phục ngôn ngữ là hành trình mở rộng thế giới quan của chính bạn.'
+    }
+  ];
+
   // 5 Full Dictation Lessons (55 sentences total)
   const DICTATION_DATA = [
     {
@@ -1254,6 +1356,7 @@
     mainView: 'overview',
     hskLevel: 3,
     overviewSkill: 'listening',
+    quoteIndex: new Date().getDate() % MOTIVATIONAL_QUOTES.length,
     currentUser: null,
     localAccounts: {},
     profile: { name: 'Khách học HSK', handle: '@guest', targetLevel: 3, streak: 1, xp: 0 },
@@ -1590,6 +1693,11 @@
     switchMainView('dictation');
   }
 
+  function cycleMotivationalQuote() {
+    App.quoteIndex = (App.quoteIndex + 1) % MOTIVATIONAL_QUOTES.length;
+    renderOverview();
+  }
+
   function renderOverview() {
     const container = document.getElementById('view-overview');
     if (!container) return;
@@ -1598,6 +1706,7 @@
     const rightCount = countCorrectAnswers();
     const lv = App.hskLevel || 3;
     const allDictations = [...DICTATION_DATA, ...App.customDictations];
+    const activeQuote = MOTIVATIONAL_QUOTES[App.quoteIndex % MOTIVATIONAL_QUOTES.length] || MOTIVATIONAL_QUOTES[0];
 
     const skillCards = [
       {
@@ -1648,32 +1757,72 @@
 
     container.innerHTML = `
       <!-- Hero Banner -->
-      <section class="relative overflow-hidden rounded-3xl hero-gradient text-white p-6 sm:p-8 lg:p-9 shadow-lg shadow-red-900/15 ring-1 ring-amber-300/15">
-        <div aria-hidden="true" class="pointer-events-none select-none font-serif-art font-bold text-[190px] sm:text-[240px] leading-none text-amber-200/[0.07] absolute -right-3 -bottom-10">华</div>
-        <div class="relative z-10 max-w-3xl space-y-4">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-amber-400/20 to-white/10 border border-amber-300/30 text-xs font-semibold text-amber-100 backdrop-blur-xs">
-            <span class="text-amber-300">${ICONS.sparkles}</span>
-            <span>Mục tiêu HSK ${lv} • ${App.currentUser ? escapeHtml(App.profile.handle) : 'Tài khoản cá nhân hóa'}</span>
+      <section class="relative overflow-hidden rounded-3xl hero-gradient text-white p-6 sm:p-8 shadow-lg shadow-red-900/15 ring-1 ring-amber-300/20">
+        <div aria-hidden="true" class="pointer-events-none select-none font-serif-art font-bold text-[190px] sm:text-[230px] leading-none text-amber-200/[0.06] absolute -right-4 -bottom-10">华</div>
+        <div class="relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-6 items-center">
+          <!-- Left 7 Cols: Inspiring Welcome & Concise Platform Identity -->
+          <div class="xl:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gradient-to-r from-amber-400/20 to-white/10 border border-amber-300/30 text-xs font-semibold text-amber-100 backdrop-blur-xs">
+              <span class="text-amber-300">${ICONS.sparkles}</span>
+              <span>HuaYu Studio • Lộ trình HSK ${lv} chuẩn giáo trình</span>
+            </div>
+            <h1 class="text-2xl sm:text-3xl lg:text-[34px] font-extrabold tracking-tight leading-tight">
+              Chào ${escapeHtml(greetingName)}, cùng chinh phục tiếng Trung hôm nay!
+            </h1>
+            <p class="text-xs sm:text-sm text-red-100/90 leading-relaxed max-w-xl">
+              Không gian luyện thi HSK 1–6 toàn diện — nơi bạn rèn phản xạ Nghe · Nói · Đọc · Viết và lưu giữ hành trình tiến bộ của riêng mình mỗi ngày.
+            </p>
+            <div class="pt-1 flex flex-wrap gap-2.5">
+              <button onclick="switchMainView('vocab')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-amber-50 text-red-800 text-xs sm:text-sm font-bold shadow-md shadow-black/10 transition">
+                ${ICONS.layers}
+                <span>Học Từ vựng HSK &amp; Game</span>
+              </button>
+              <button onclick="switchMainView('dictation')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/12 hover:bg-white/20 border border-white/25 text-white text-xs sm:text-sm font-semibold transition">
+                ${ICONS.headphones}
+                <span>Phòng Chép chính tả</span>
+              </button>
+              <button onclick="switchMainView('grammar')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/12 hover:bg-white/20 border border-white/25 text-white text-xs sm:text-sm font-semibold transition">
+                ${ICONS.book}
+                <span>22 chuyên đề Ngữ pháp</span>
+              </button>
+            </div>
           </div>
-          <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight">
-            Chào ${escapeHtml(greetingName)}, cùng chinh phục tiếng Trung hôm nay!
-          </h1>
-          <p class="text-xs sm:text-sm text-red-100/90 leading-relaxed max-w-2xl">
-            Tích hợp đầy đủ 4 kỹ năng HSK 1–6 (462+ bài chuẩn 5 giáo trình), kho Từ vựng Flashcard &amp; Game ghép cặp, Phòng Chép chính tả và 22 chuyên đề Ngữ pháp thực chiến cá nhân hóa theo từng tài khoản.
-          </p>
-          <div class="pt-2 flex flex-wrap gap-3">
-            <button onclick="switchMainView('vocab')" class="inline-flex items-center gap-2 px-4.5 py-2.5 rounded-xl bg-white hover:bg-amber-50 text-red-800 text-xs sm:text-sm font-bold shadow-md shadow-black/10 transition">
-              ${ICONS.layers}
-              <span>Học Từ vựng HSK &amp; Game</span>
-            </button>
-            <button onclick="switchMainView('dictation')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/12 hover:bg-white/20 border border-white/25 text-white text-xs sm:text-sm font-semibold transition">
-              ${ICONS.headphones}
-              <span>Phòng Chép chính tả</span>
-            </button>
-            <button onclick="switchMainView('grammar')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/12 hover:bg-white/20 border border-white/25 text-white text-xs sm:text-sm font-semibold transition">
-              ${ICONS.book}
-              <span>22 chuyên đề Ngữ pháp</span>
-            </button>
+
+          <!-- Right 5 Cols: Daily Chinese Motivational Proverb / Idiom Card -->
+          <div class="xl:col-span-5 rounded-2xl bg-black/20 border border-amber-200/20 backdrop-blur-xs p-5 space-y-3 shadow-inner">
+            <div class="flex items-center justify-between gap-2">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg bg-amber-400/20 border border-amber-300/25 text-[11px] font-bold text-amber-200">
+                ${escapeHtml(activeQuote.category)}
+              </span>
+              <div class="flex items-center gap-1.5">
+                <button onclick="speakChinese('${escapeHtml(activeQuote.zh)}', 0.85)" title="Nghe phát âm chuẩn" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white/12 hover:bg-white/20 text-[11px] font-semibold text-white transition">
+                  ${ICONS.volume}
+                  <span>Nghe</span>
+                </button>
+                <button onclick="cycleMotivationalQuote()" title="Xem câu truyền động lực khác" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white/12 hover:bg-white/20 text-[11px] font-semibold text-amber-100 transition">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                  <span>Câu khác</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-1">
+              <div class="font-serif-art text-lg sm:text-xl font-bold text-white tracking-wide leading-snug">
+                “${escapeHtml(activeQuote.zh)}”
+              </div>
+              <div class="text-xs font-medium text-amber-200/95 tracking-wide">
+                ${escapeHtml(activeQuote.py)}
+              </div>
+            </div>
+
+            <div class="pt-2 border-t border-white/10 space-y-1">
+              <div class="text-xs font-bold text-white/95">
+                ${escapeHtml(activeQuote.vi)}
+              </div>
+              <p class="text-[11px] text-red-100/80 italic leading-relaxed">
+                ${escapeHtml(activeQuote.note)}
+              </p>
+            </div>
           </div>
         </div>
       </section>
